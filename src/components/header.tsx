@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-// import * as ROUTES from "../constants/routes";
+import * as ROUTES from "../constants/routes";
 import Image from 'next/image'
 
 type headerProps = {
@@ -44,10 +44,14 @@ const header:React.FC<headerProps> = () => {
                 <div className="flex flex-col h-full justify-between lg:items-center lg:flex-row">
                   <ul className="px-6 pt-32 text-gray-700 space-y-8 md:px-12 lg:space-y-0 lg:flex lg:space-x-12 lg:pt-0">
                     <li className="pb-2 group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0 before:bg-zinc-300 before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100">
-                      Home
+                      <Link href={ROUTES.HOME} >
+                        Home
+                      </Link>
                     </li>
-                    <li className="pb-2 group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0 before:bg-zinc-300 before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100 items-right">
-                      About Us
+                    <li className="pb-2 group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0 before:bg-zinc-300 before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100">
+                      <Link href={ROUTES.ABOUT} >
+                        About
+                      </Link>
                     </li>
                   </ul>
                 </div>
