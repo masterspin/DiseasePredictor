@@ -30,5 +30,6 @@ const form:React.FC<formProps> = () => {
 		    <MultiSelect {...props} />
 	    </div>
     )
+    console.log(value)
 }
 export default form;
