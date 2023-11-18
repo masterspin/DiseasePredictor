@@ -15,10 +15,10 @@ const form:React.FC<formProps> = () => {
     const [value, setValue] = useState(['desktop']);
     const  props: MultiSelectProps = {
 	label: 'Tags',
+    id: 'Id',
 	name: 'tags',
 	size: 'small',
 	optionList: [
-		{ label: 'desktop' },
 	],
 	placeholder: 'Add tags',
 	value: value,
