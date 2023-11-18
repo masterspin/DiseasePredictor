@@ -11,25 +11,6 @@ type formProps = {
 };
 
 const form:React.FC<formProps> = () => {
-
-    const [value, setValue] = useState(['desktop']);
-    const  props: MultiSelectProps = {
-	label: 'Tags',
-    id: 'Id',
-	name: 'tags',
-	size: 'small',
-	optionList: [
-	],
-	placeholder: 'Add tags',
-	value: value,
-	valueChange: setValue
-  };
-    
-    return(
-        <div className="p-2">
-		    <MultiSelect {...props} />
-	    </div>
-    )
-    console.log(value)
+    <fieldset className='state-dropdown'></fieldset>
 }
 export default form;
