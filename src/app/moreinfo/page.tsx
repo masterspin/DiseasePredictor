@@ -7,10 +7,11 @@ const MoreInfo = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const API_KEY = 'API_KEY_HERE'; // Your OpenAI API key
-        openai.api_key = API_KEY;
-        openai.api_base = 'https://api.umgpt.umich.edu/azure-openai-api/ptu';
-        openai.api_version = '2023-03-15-preview';
+        const { OpenAIAPI } = require('openai');
+        const API_KEY = 'YOUR_OPENAI_API_KEY';
+        const openai = new OpenAIAPI({ key: API_KEY });
+        openai.setApiBase('https://api.umgpt.umich.edu/azure-openai-api/ptu'); // Use the correct API endpoint
+        openai.setApiVersion('2023-03-15-preview');
 
         const response = await openai.ChatCompletion.create({
           engine: 'gpt-4',
