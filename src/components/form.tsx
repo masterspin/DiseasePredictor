@@ -1,22 +1,34 @@
-import React from 'react'
+'use client'
+import React, { useState } from 'react';
 import Link from 'next/link'
 // import * as ROUTES from "../constants/routes";
 import Image from 'next/image'
+import { MultiSelect, MultiSelectProps } from '@uc-react-ui/multiselect';
+
 
 type formProps = {
     
 };
 
-const header:React.FC<formProps> = () => {
+const form:React.FC<formProps> = () => {
+
+    const [value, setValue] = useState(['desktop']);
+    const  props: MultiSelectProps = {
+	label: 'Tags',
+	name: 'tags',
+	size: 'small',
+	optionList: [
+		{ label: 'desktop' },
+	],
+	placeholder: 'Add tags',
+	value: value,
+	valueChange: setValue
+  };
     
     return(
-        <div>
-            <fieldset>
-                <button>
-                    
-                </button>
-            </fieldset>
-        </div>
+        <div className="p-2">
+		    <MultiSelect {...props} />
+	    </div>
     )
 }
-export default header;
+export default form;
