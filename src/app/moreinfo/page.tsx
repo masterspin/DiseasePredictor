@@ -1,44 +1,27 @@
-import { useEffect, useState } from 'react';
-import openai from 'openai'; // Make sure to install openai package
+'use client';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 
-const MoreInfo = () => {
-  const [responseContent, setResponseContent] = useState<string>('');
+const YourComponent = () => {
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const { OpenAIAPI } = require('openai');
-        const API_KEY = 'YOUR_OPENAI_API_KEY';
-        const openai = new OpenAIAPI({ key: API_KEY });
-        openai.setApiBase('https://api.umgpt.umich.edu/azure-openai-api/ptu'); // Use the correct API endpoint
-        openai.setApiVersion('2023-03-15-preview');
+  let headers = new Headers();
+  headers.append('Access-Control-Allow-Origin', 'http://localhost:3000');
 
-        const response = await openai.ChatCompletion.create({
-          engine: 'gpt-4',
-          messages: [
-            { role: 'system', content: 'You are a helpful assistant.' },
-            { role: 'user', content: 'Who won the world series in 2020?' },
-          ],
-        });
 
-        if (response && response.data && response.data.choices && response.data.choices.length > 0) {
-          const content = response.data.choices[0].message.content;
-          setResponseContent(content);
-        }
-      } catch (error) {
-        console.error('Error fetching data:', error);
-      }
-    };
-
-    fetchData();
-  }, []);
-
+  useEffect(() =>{
+    fetch("http://localhost:5000/gpt", {
+      mode: 'no-cors',
+      headers: headers
+    }).then((data) => {
+      console.log(data); 
+    });
+  },[]);
+  
   return (
     <div>
       <h1>OpenAI Chat Response:</h1>
-      <p>{responseContent}</p>
     </div>
   );
 };
 
-export default MoreInfo;
+export default YourComponent;
