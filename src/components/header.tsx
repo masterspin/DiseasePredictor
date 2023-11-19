@@ -50,7 +50,7 @@ const header:React.FC<headerProps> = () => {
                     </li>
                     <li className="pb-2 group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0 before:bg-zinc-300 before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100">
                       <Link href={ROUTES.ABOUT} >
-                        About
+                        Terms of Service
                       </Link>
                     </li>
                   </ul>
