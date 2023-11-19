@@ -8,7 +8,7 @@ Our model consisted of a Random Forest Classifier in conjunction with a GridSear
 ## Challenges we Ran into to
 We ran into many obstacles with our backend implmentation. We first had to figure out how to integrate Flask with Next.js. We did this due to our model being trained using scikit-learn, and we could not find any documentation to use the model in Next.js. We also had trouble getting the U-M GPT api to work. The relevant documentaion was outdated, so we had to downgrade our version of the openai library to get the api to work. 
 ## Accomplishments That we are Proud of
-We are proud of our models accuracy, achieveing a 100% top-3 accuracy on testing data. We are also proud of getting the U-M GPT api to work, as we had to deal with older versions of the openai library. 
+We are proud of our models accuracy, achieveing a 100% top-3 accuracy and 94.3% top-1 accuracy on testing data. We are also proud of getting the U-M GPT api to work, as we had to deal with older versions of the openai library. 
 ## What we Learned
 We learned how to utitlize different machine learning models to train data, and how to choose the best one. We also learned how to integrate Flask and Next.js to make api calls. This allowed us to make api calls without having to redirect from the page. 
 ## What's Next
