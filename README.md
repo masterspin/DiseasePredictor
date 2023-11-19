@@ -60,3 +60,6 @@ This section should list any major frameworks/libraries used to bootstrap your p
 [Bootstrap-url]: https://getbootstrap.com
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com 
+
+Diseases can be found at <a href='https://github.com/masterspin/DiseasePredictor/blob/main/src/diseases.txt'>this link</a>
+Symptoms can be found at <a href='https://github.com/masterspin/DiseasePredictor/blob/main/src/symptoms.txt'>this link</a>
