@@ -1,7 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
 import * as ROUTES from "../constants/routes";
-import Image from 'next/image'
 
 type headerProps = {
     

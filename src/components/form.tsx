@@ -1,21 +1,12 @@
 'use client'
-import React, { useState, useEffect } from 'react';
-import { useRouter } from 'next/navigation';
-import Link from 'next/link'
+import React, { useState } from 'react';
 import { symptoms } from './symptoms';
-import { usePathname } from 'next/navigation'
-// import * as ROUTES from "../constants/routes";
-import Image from 'next/image'
 import { MultiSelect, MultiSelectProps } from '@uc-react-ui/multiselect';
-import * as ROUTES from "../constants/routes";
-import { useSearchParams } from 'next/navigation'
-import { Bs1Circle, Bs2Circle, Bs3Circle } from 'react-icons/bs'
 
 type formProps = {
     
 };
 const form:React.FC<formProps> = () => {
-    const router = useRouter()
     const [value, setValue] = useState(['']);
     const  props: MultiSelectProps = {
 	label: 'Select All Symptoms',
