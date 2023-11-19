@@ -14,9 +14,9 @@ const header:React.FC<headerProps> = () => {
       <div className="relative z-20 bg-white">
         <div className="px-6 md:px-12 lg:container lg:mx-auto lg:px-6 lg:py-4">
           <div className="flex items-center justify-between">
-            <div className="relative z-20 pb-1">
-              <Link href={ROUTES.HOME}><Image src="/images/logo.png" width={214} height={66} alt='Brix N Stones'/></Link>
-            </div>
+            {/* <div className="relative z-20 pb-1 rounded-full rounded">
+              <Link href={ROUTES.HOME}><Image src="/images/logo.png" width={66} height={66} alt='Bug Catchers'/></Link>
+            </div> */}
 
             <div className="flex items-center justify-end">
               <input
