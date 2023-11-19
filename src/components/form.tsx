@@ -6,7 +6,7 @@ import { MultiSelect, MultiSelectProps } from '@uc-react-ui/multiselect';
 type formProps = {
     
 };
-const form:React.FC<formProps> = () => {
+const form = () => {
     const [value, setValue] = useState(['']);
     const  props: MultiSelectProps = {
 	label: 'Select All Symptoms',
