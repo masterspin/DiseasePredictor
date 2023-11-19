@@ -6,7 +6,7 @@ import { MultiSelect, MultiSelectProps } from '@uc-react-ui/multiselect';
 type formProps = {
     
 };
-const form = () => {
+const Form = () => {
     const [value, setValue] = useState(['']);
     const  props: MultiSelectProps = {
 	label: 'Select All Symptoms',
@@ -120,4 +120,4 @@ const form = () => {
         </div>
     )
 }
-export default form;
+export default Form;
