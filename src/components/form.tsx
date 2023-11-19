@@ -58,9 +58,9 @@ const form:React.FC<formProps> = () => {
     }
     return(
         <div className="p-2 ">
-            <div className='justify-center flex items-center'>
+            <div className='justify-center flex items-center pt-4 pl-4'>
 		    <MultiSelect {...props} />
-            <button className='bg-blue-500 hover:bg-blue-400 text-white font-bold px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded' disabled={value.length == 1} onClick={() => handleOnSubmit(value)}>Enter</button>
+            <button className='bg-blue-500 hover:bg-blue-400 text-white font-bold px-4 ml-5 mt-4 mr-5 border-b-4 border-blue-700 hover:border-blue-500 rounded' disabled={value.length == 1} onClick={() => handleOnSubmit(value)}>Enter</button>
             </div>
             <div style={{ display: hidden ? "block" : "none" }}>
             <div className="container mx-auto px-4 py-10">
