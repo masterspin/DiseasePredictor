@@ -24,8 +24,8 @@ const Form = () => {
   async function handleOnSubmit(value:any) {
     let headers = new Headers();
     headers.append('Content-Type','application/json')
-    headers.append('Access-Control-Allow-Origin', 'http://localhost:8080')
-    await fetch("http://localhost:8080/model", {
+    headers.append('Access-Control-Allow-Origin', 'https://flask-bug-catcher.onrender.com/')
+    await fetch("https://flask-bug-catcher.onrender.com/model", {
           method:'POST',
           headers: headers,
           body: JSON.stringify({feature_matrix: value})
