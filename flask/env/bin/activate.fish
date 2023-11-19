@@ -33,7 +33,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/Users/ritij/Documents/Projects/MHACKS16/flask/env"
+set -gx VIRTUAL_ENV "/Users/ritij/Documents/Projects/DiseasePredictor/flask/env"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH

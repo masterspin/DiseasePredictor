@@ -1,4 +1,4 @@
-#!/Users/ritij/Documents/Projects/MHACKS16/flask/env/bin/python3.11
+#!/Users/ritij/Documents/Projects/DiseasePredictor/flask/env/bin/python3.11
 # -*- coding: utf-8 -*-
 import re
 import sys
