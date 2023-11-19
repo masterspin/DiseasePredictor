@@ -21,7 +21,10 @@ export default function About() {
 
 <h2 className='font-semibold text-lg'>4. Limitation of Liability</h2>
 
-<p className='pb-4'>To the fullest extent permitted by law, we shall not be liable for any direct, indirect, incidental, consequential, or punitive damages resulting from the use or inability to use this service.</p>
+<p>To the fullest extent permitted by law, we shall not be liable for any direct, indirect, incidental, consequential, or punitive damages resulting from the use or inability to use this service.</p>
+<h2 className='font-semibold text-lg'>5. Model Limitations</h2>
+
+<p className='pb-4'>We currently only have enough data to predict 41 diseases from 131 symptoms that can be seen in our <a className='text-blue-500' href='https://github.com/masterspin/DiseasePredictor'>GitHub.</a></p>
 <hr></hr>
 <h1 className='font-semibold text-xl pb-4 pt-2'>Terms of Service</h1>
 
