@@ -120,6 +120,9 @@ const form:React.FC<formProps> = () => {
                 </div>
             </div>
             </div>
+            <div className='mx-10' style={{ display: !hidden ? "block" : "none" }}>
+                Welcome to our Disease Predictor. To help us provide you with the most accurate predictions, please enter your symptoms in the box below. Describe how you're feeling using specific terms. For example, you might mention 'fever', 'headache', 'nausea', or any other sensations or observations you deem relevant. The more detailed your description, the better we can assist you. Please remember, this tool is for informational purposes only and should not replace professional medical advice.
+            </div>
         </div>
     )
 }
