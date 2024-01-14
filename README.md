@@ -19,7 +19,7 @@ We are proud of our models accuracy, achieveing a 100% top-3 accuracy and 94.3% 
 ## What we Learned
 We learned how to utitlize different machine learning models to train data, and how to choose the best one. We also learned how to integrate Flask and Next.js to make api calls. This allowed us to make api calls without having to redirect from the page. 
 ## What's Next
-We will collect user data with consent to train our model on more disease and symptoms to increase our accuracy and repertoire. We plan to add a feature where users can upload there data to our firebase storage. Overall, we want people to have access to quick diagnosis from the click of a button to improve overall public health. 
+We will collect user data with consent to train our model on more disease and symptoms to increase our accuracy and repertoire. We plan to add a feature where users can upload their data to our firebase storage. Overall, we want people to have access to quick diagnosis from the click of a button to improve overall public health. 
 
 ### Built With
 
